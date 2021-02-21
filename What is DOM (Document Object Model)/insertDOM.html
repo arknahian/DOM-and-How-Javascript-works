@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+              article {
+            border: 1px solid tomato;
+            border-radius: 20px;
+            margin: 29px;
+        }
+        article h1 {
+            margin: 29px;
+        }
+        article p {
+            margin: 29px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <h1 class="special">This is heading</h1>
+            <p>author-1</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam id laborum minima? Non ipsam eum asperiores doloremque eligendi, at excepturi a quia sint tempore iusto harum natus similique placeat laudantium quae minima labore voluptatem dolores, est commodi debitis.</p>
+        </article>
+        <article class="another">
+            <h1>This is another</h1>
+            <p>author-2</p>
+            <p>Asperiores porro assumenda beatae fugiat, eaque nesciunt minus quasi quisquam a, veritatis nobis inventore dolorum quibusdam repellat cumque autem corrupti accusamus, odio repudiandae facere obcaecati temporibus voluptas impedit? Doloremque ipsam dolorum incidunt, accusamus possimus vero minima sapiente distinctio.</p>
+        </article>
+        <article>
+            <h1>This is heading</h1>
+            <p>author-3</p>
+            <p>Reprehenderit rerum mollitia, inventore veritatis dolore voluptatibus nam saepe dolorum sunt non cupiditate ad at possimus ducimus voluptatum nemo excepturi eaque! Quas in eligendi distinctio quibusdam, alias, eos natus recusandae doloremque dolore ullam vitae voluptas odit, nulla soluta.</p>
+        </article>
+        <article id="lastArticle">
+            <h1>This is heading</h1>
+            <p>author-4</p>
+            <p>Ipsam distinctio placeat tempora quae quaerat, hic suscipit rem tenetur quibusdam. Molestiae in illo ipsa voluptates non assumenda corrupti, quis, vero amet alias a neque quibusdam quas. Sapiente porro nisi ipsum recusandae veniam, quae deleniti ullam facere architecto?</p>
+        </article>
+
+        <article id="grocery-list">
+            <h1>this is Grocery List</h1>
+        </article>
+    </section>
+
+
+    <script>
+        const article = document.getElementById("lastArticle");
+        const newArticle = document.createElement("p");
+        newArticle.innerHTML = "This is made By Javascript";
+        article.appendChild(newArticle);
+
+
+        const groceryList = document.getElementById("grocery-list");
+        const list = document.createElement("ul");
+        list.innerHTML = "<li>this </li> <li>this is another thing</li> <li>another one</li>"
+        groceryList.appendChild(list);
+
+    </script>
+
+</body>
+</html>
