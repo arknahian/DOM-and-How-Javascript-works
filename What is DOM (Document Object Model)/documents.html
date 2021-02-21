@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exploring DOM</h1>
+    <h1>This is h1 </h1>
+    <p>This is paragraph.</p>
+    <p>this is another paragraph</p>
+    <p id="myID">This is from a id</p>
+    <p id="red">This is red paragraph</p>
+    <p id="green">This is green one and that will be by variable</p>
+    <div id="yellow">
+        <h4>This is yellow background</h4>
+    </div>
+
+    <script>
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementById("myID"));
+
+        //for red one
+        // console.log(document.getElementById("red").style.color = "red");        //by that also html can be red or color change that is awesome!!!!!!!!!!!!!!!!!!!!!!  
+        document.getElementById("red").style.color = "red";
+
+        //for green js code
+        var green = document.getElementById("green");
+        green.style.color = "green";
+
+        // for the yellow background
+
+        var yellow = document.getElementById("yellow");
+        yellow.style.backgroundColor = "yellow";
+        yellow.style.fontSize = "90px";
+        console.log(document.getElementById("yellow").style.color = "red")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY class name and innerHTML</title>
+    <style>
+        article {
+            border: 1px solid tomato;
+            border-radius: 20px;
+            margin: 29px;
+        }
+        article h1 {
+            margin: 29px;
+        }
+        article p {
+            margin: 29px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <h1>header-1</h1>
+            <p class="author">author -1</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iste natus rem similique eligendi architecto debitis voluptatum reiciendis temporibus sint libero, praesentium quo mollitia blanditiis, consectetur corporis minus a quaerat.</p>
+        </article>
+        <article>
+            <h1>header-2</h1>
+            <p class="author">author -2</p>
+            <p>Quod blanditiis nesciunt quasi, corporis repellendus explicabo laudantium atque rerum laboriosam, corrupti natus consequatur dolorum nisi accusamus quis. Quaerat possimus aspernatur in accusantium tempora facere sapiente vitae ratione odit quidem.</p>
+        </article>
+        <article>
+            <h1>header-3</h1>
+            <p class="author">author -3</p>
+            <p>Soluta facere, molestias sit, officia fuga perspiciatis nulla error excepturi harum vero magni ipsam, quae ea quasi saepe exercitationem quisquam fugiat adipisci quo molestiae beatae minus earum. Maxime, minima minus.</p>
+        </article>
+        <article>
+            <h1>header-4</h1>
+            <p class="author">author -4</p>
+            <p>Sint quo ipsa, maxime quod et ducimus magni quis facere inventore! Itaque eos repudiandae accusamus consequuntur iusto, nostrum totam quos dolorem tenetur! Aut odit repellendus asperiores vero. Ducimus, commodi corrupti!</p>
+        </article>
+        <article>
+            <h1>header-5</h1>
+            <p class="author">author -5</p>
+            <p>Laudantium amet rerum doloremque delectus in, fugit enim vero voluptates incidunt a minima sunt ut. Porro iste reiciendis, consequuntur maiores quidem ratione velit eligendi beatae, deleniti necessitatibus, mollitia voluptas aliquam?</p>
+        </article>
+        <article>
+            <h1>header-6</h1>
+            <p class="author">author -6</p>
+            <p>Blanditiis molestiae dolore nulla aspernatur similique inventore! Voluptates sit rerum ratione. Doloribus numquam dolorum perspiciatis debitis pariatur asperiores, id quos non sed, sint molestiae illum, eligendi facilis maiores magnam autem!</p>
+        </article>
+    </section>
+    <script>
+     var author = document.getElementsByClassName("author");
+     for (let i = 0; i < author.length; i++) {
+         const element = author[i];
+         element.style.color = "red";
+         element.innerHTML = "lekhok" + (i+1);
+     }
+     
+    </script>
+</body>
+</html>
